@@ -11,5 +11,8 @@ module.exports = {
   extends: ['@nuxtjs', 'plugin:nuxt/recommended', 'prettier'],
   plugins: [],
   // add your custom rules here
-  rules: {},
+  rules: {
+    // store 에 index.js 파일 생성시 오류가 발생.
+    'vue/multi-word-component-names': 'off',
+  },
 }
