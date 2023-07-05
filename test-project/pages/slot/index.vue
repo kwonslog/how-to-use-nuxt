@@ -39,6 +39,11 @@ export default {
       this.$store.dispatch('fetchCounter')
       // this.$store.dispatch('setCounter', 100)
       this.value1++
+
+      // replace 하면 페이지 이동이 되지만 이전 페이지 이동은 안된다.
+      // this.$router.replace('/dyn')
+      // 페이지 이동 가능. 이전 페이지 이동 가능
+      this.$router.push('/dyn')
     },
   },
 }
